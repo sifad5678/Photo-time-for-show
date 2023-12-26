@@ -1,0 +1,667 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: phototime by ws sifad
+	Template URI: 
+	Description: photo related template
+	Author:SIFAD
+	Author URI: 
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+	  syllabus 
+	1. Typography
+	2. Header Area
+		2.1 Menu Area
+		2.2 Welcome Text 
+		2.3 Social Media 
+	3. Getting Started
+	4. Design Area
+	5. Community Area
+	6. Subscribe Area
+	7. Download Area
+	8. Footer Area
+
+-----------------------------------------------------------------------------------
+    Media Query
+	
+-----------------------------------------------------------------------------------*/
+
+
+
+/*-------- Universal mark -----------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+}
+
+ p{
+	font-family: 'Nunito' sans-serif;
+	line-height: 1.8em;
+	letter-spacing: 1px;
+	color: #4e4e4e;
+}
+
+
+
+h3{
+	color: #16A086;
+	text-transform: uppercase;
+	line-height: 1.3em;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+h2{
+	font-size: 38px;
+	text-transform:uppercase;
+	letter-spacing:10px;
+	font-family: 'Nunito', sans-serif;
+}
+
+/*--------  2. Header area -----------*/
+.header-area{
+	background: url(images/header-bg.jpg) no-repeat 0 0 / 100% 100%;
+	color: white;
+	text-align: center;
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+
+
+
+/*-------- 2.1 Menu Area -----------*/
+
+
+/* first menu bar */
+.first-sidebar{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 73px;
+}
+.header-area ul li{
+	height: 50px;
+}
+.header-area ul li a{
+	height: 100%;
+	padding:0 30px;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	font-weight: 800;
+}
+.header-area ul li a:hover{
+    color:#1BBC9B;
+	width: 100% !important;
+	border-bottom: 1px solid white;
+}
+
+
+
+/* Second Menu bar */
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 25px;
+	width: 250px !important;
+	height: 100vh;
+	z-index: 999;
+    background-color: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, .1);
+
+
+	display: none;
+	flex-direction: column;
+	align-items: flex-start !important;
+    justify-content: flex-start;
+
+
+}
+
+
+.sidebar li{
+	width: 100%;
+}
+.sidebar li a{
+	width: 100%;
+	transition: .1s;
+	border-bottom: 1px solid transparent;
+}
+.sidebar li a:hover{
+	background-color: transparent !important;
+	text-indent: 5px;
+	border-bottom: 1px solid white;
+}
+
+
+.menu-button{
+	display: none;
+}
+
+
+.logo-adjust{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header-area nav {
+	padding: 28px 0;
+}
+.header-area nav ul{
+	list-style: none;
+	text-align: center;
+
+}
+.header-area nav ul li{
+	display: inline;
+	margin:  0 30px;
+}
+.header-area .logo{
+	width: 50px;
+}
+.header-area nav ul li a{
+	color: white;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing:4px;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 5px;
+}
+.header-area nav ul li a:hover{
+	border-bottom: 2px solid white;
+	color: #16A086;
+}
+.header-area nav ul li a i{
+	font-size: 25px;
+}
+
+
+/*-------- Sidebar Menu   ---------*/
+ /*.sidebar{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+
+
+	display: none;
+	flex-direction: column;
+	width: 250px;
+	
+}
+.sidebar li{
+	height: 50px;
+	width: 100%;
+}
+.sidebar li a{
+	width: 100%;
+}
+.sidebar li:first-child{
+	margin-left: auto;
+	margin-top: 30px;
+}
+.sidebar li:nth-child(2){
+	
+	margin-bottom: 50px;
+}
+
+.menuButton{
+	display: none !important;
+} */
+
+/*-------- 2.2 Welcome Text  -----------*/
+.welcome-text{
+	margin-top: 200px;
+	overflow: hidden;
+}
+
+.welcome-text p{
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	color: white;
+}
+
+.btn{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	background-color:#16A086 ;
+	padding: 10px 30px;
+	border-radius: 3px;
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid transparent;
+	transition: .2s;
+	letter-spacing: 1px;
+}
+.btn:hover{
+	color:#16A086 ;
+	border: 1px solid #16A086;
+	background-color: rgba(255, 255, 255, 0.767);
+}
+
+
+
+
+/*-------- 2.3 Social Media  -----------*/
+.social-area{
+	padding: 130px 0 20px 0;
+	overflow: hidden;
+}
+.social-area i{
+	margin: 0 7px;
+	font-size: 25px;
+	cursor: pointer;
+}
+.social-area i:hover{
+	color: #1BBC9B;
+}
+
+/*-------------------  3. Getting Started  ----------------------*/
+
+.getting-started{
+	background-color: #F5F6F8;
+	 overflow: hidden;
+	max-height: 350px; 
+	padding-top: 60px;
+}
+.getting-started .text-area{
+	padding: 20px 0;
+	background-image: url('images/hand.png') ;
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 50%;
+	margin-left: 100px;
+}
+
+/* .col-1-2{
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+.getting-started .images-area {
+	width: 50%;
+}
+.getting-started .images-area img{
+	width: 100%;
+} */
+
+
+
+
+/*-------------------  4. Design Area  ----------------------*/
+.design-area {
+	padding-top: 150px;
+	max-height: 550px;
+	overflow: hidden;
+}
+.design-area .mobile{
+	width: 30%;
+	float: left;
+}
+.design-area .design-text{
+	float: right;
+	overflow: hidden;
+	width: 40%;
+}
+.design-area .design-text h2{
+	padding-bottom: 50px;
+	color: #16A086;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.design-area .design-text a{
+	margin: 50px 0 60px 0;
+}
+.design-area .design-text .arrow i{
+	margin-right: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+
+
+
+/*-------------------  5. Subscribe Area  ----------------------*/
+
+.subscribe-area{
+	background: url(images/subscribe-bg.jpg) no-repeat 0 0 / 100% 100%;
+	padding: 300px 0;
+	text-align: center;
+}
+.subscribe-area h3{
+	font-size: 30px;
+	color: white;
+}
+.subscribe-area form 
+input[type="email"]{
+	background-color: white;
+	padding: 10px 30px;
+	border: none;
+	letter-spacing: 2px;
+	font-size: large;
+	text-transform: uppercase;
+	border-radius: 3px 0 0 3px;
+	margin-right: 0;
+}
+.subscribe-area form 
+button{
+	background-color:#16A086;
+	padding: 10px 18px;
+	border: none;
+	letter-spacing: 2px;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-radius: 0 3px  3px 0;
+	margin-right: 0;
+	margin-left: -4px;
+	color: white;
+}
+.subscribe-area form{
+	margin-top: 20px;
+}
+
+
+
+/*-------------------  6. Community Area  ----------------------*/
+.community-area{
+	background-color: #F5F6F8;
+	padding: 100px 0;
+	overflow: hidden;
+}
+
+.community-area .arrow{
+	float: right;
+	margin-right: 11px;
+}
+.community-area .row{
+	overflow: hidden;
+	width: 100%;
+}
+.community-area .community-text{
+	width: 20%;
+	float: left;
+	text-align: center;
+	margin-top: 30px;
+
+}
+.community-area .community-text h3{
+	margin: 15px 0;
+}
+.community-area .community-text p{
+	color: black;
+	font-size: 12px;
+	line-height: 1.1em;
+}
+.community-area .images{
+	width: 70%;
+	overflow: hidden;
+	float: right;
+}
+.community-area .images img{
+	width: 49%;
+	
+}
+
+
+/*-------------------  7. Download Area  ----------------------*/
+
+
+.download-area{
+	padding: 100px 0;
+	text-align: center;
+	background-color: #F5F6F8;
+}
+.download-area .download-text{
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+.download-area .download-text h3{
+	color: black;
+	font-weight: 800;
+	font-size: 22px;
+
+}
+ .download-file-center{
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+	margin-left: 25%;
+}
+.download-area .download-file{
+	float: left;
+	overflow: hidden;
+	width: 29%;
+	margin: auto;
+}
+.download-file .btn-down{
+	background-color: #1BBC9B;
+	color: white;
+	width: 250px;
+	padding: 15px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: block;
+	border-radius: 3px 0 0 3px;
+	float: left;
+	font-weight: 800;
+}
+.download-file .btn-down:last-child{
+	display: block;
+	width: 50px;
+	margin-left: -5px;
+	border-radius: 0 3px 3px 0;
+	background-color:#16A086;
+}
+
+.download-file .btn-down i{
+	font-size: 19px;
+}
+
+
+/*-------------------  8. Fooer Area  ----------------------*/
+.footer-area{
+	padding: 50px 0;
+}
+.footer-area .left-footer{
+	width: 60%;
+	float: left;
+}
+.footer-area .left-footer ul{
+	list-style: none;
+}
+.footer-area .left-footer ul li{
+	float: left;
+	border-left: 1px solid #1BBC9B;
+}
+.footer-area .left-footer ul li:first-child{
+	border: none;
+}
+.footer-area .left-footer ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding: 0 10px;
+	font-size: 14px;
+}
+.footer-area .left-footer p{
+	color: black;
+	font-weight: 700;
+	padding-left: 10px;
+}
+
+
+
+.footer-area .right-footer{
+	
+	float: right;
+}
+
+
+
+
+/*----------------          Media Query                   -----------------*/
+
+@media (max-width:960px){
+	/* .header-area nav ul li{
+		margin: 0 12px;
+	} */
+}
+
+@media (max-width:768px){
+
+	 .hideOnMobile{
+		display: none;
+		
+	} 
+	.menu-button{
+		display: block;
+	}
+	.first-sidebar {
+		
+	display: flex;
+	justify-content: flex-start;
+	}
+	
+	
+
+
+	/* .header-area nav ul{
+		text-align: start;
+	}
+	.hideOnMobile{
+		display: none !important;
+	}
+	.menuButton{
+		display: block !important;
+	} */
+
+
+
+
+	/*------------- Getting Started -------*/
+	.getting-started{
+		max-height: none;
+	}
+	.getting-started .text-area p{
+		letter-spacing: 0;
+		margin-top: 20px;
+	}
+
+
+	.getting-started .text-area{
+		background-image: none;
+	}
+	.community-area .community-text{
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.community-area .images{
+		float: none;
+		width: 100%;
+	}
+	.community-area .arrow{
+		display: none;
+	}
+
+	/*--------- Download Area --------*/
+	.download-file .btn-down:last-child{
+		display: none;
+
+	}
+	.download-file-center{
+		
+		margin-left: 0;
+	}
+	.download-file .btn-down{
+		text-align: center;
+		float: none;
+		width: 100%;
+	}
+	.download-area .download-file {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+}
+
+
+@media (max-width:430px){
+	/*---------- Getting Started ---------*/
+	.getting-started .text-area{
+		margin-left: 0;
+	}
+
+
+
+	/*--------- Design Area -----------*/
+	.design-area .mobile{
+		display: none;
+		width: 0;
+	}
+	.design-area .design-text{
+		width: 100%;
+	}
+
+	/*-------- Subscribe Area ------------*/
+	.subscribe-area form button{
+		margin-top: 10px;
+	}
+
+
+	/*-------- Footer Area ------------*/
+	.footer-area .left-footer ul li{
+		border-bottom: 1px solid #1BBC9B;
+		border-left: none;
+	}
+	.footer-area .left-footer ul li:first-child{
+		border-left: none;
+		border-bottom: 1px solid #1BBC9B;
+	}
+
+
+	/*---------- Sidebar Menu --------*/
+	.sidebar{
+		width: 100% !important;
+	}
+}
+
+
